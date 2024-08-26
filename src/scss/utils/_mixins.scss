@@ -5,7 +5,7 @@
 @use 'functions' as fn;
 
 @mixin mq($bp: sm, $type: min, $is-retina: false) {
-  @if map.has-key(var.$brakpoints, $bp) {
+  @if map.has-key(var.$breakpoints, $bp) {
     $width: map.get(var.$breakpoints, $bp);
 
     @if $type == max {
